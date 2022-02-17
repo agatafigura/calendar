@@ -22,7 +22,15 @@
 
     <div class="calendar">
       <h1>January 2022</h1>
+      
       <div class="squares">
+        <li>Monday</li>
+        <li>Tuesday</li>
+        <li>Wednesday</li>
+        <li>Thursday</li>
+        <li>Friday</li>
+        <li>Saturday</li>
+        <li>Sunday</li>
           <div class="square"></div>
           <div class="square"></div>
           <div class="square"></div>
@@ -137,6 +145,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  overflow: hidden;
 }
 .wrapper {
   width: 100vw;
@@ -155,6 +164,11 @@ body {
   padding: 1rem;
 }
 
+li {
+  list-style: none;
+  margin-bottom: 0.5rem;
+}
+
 .list1 {
     display: flex;
     flex-direction: column;
@@ -171,20 +185,21 @@ p {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(7, 1fr);
-    border: 1px solid gray;
     position: absolute;
     width: 70vw;
     height: 80vh;
+    justify-items: center;
 }
 
 .list2 {
     display: grid;
     grid-template-rows: repeat(4, 1fr);
     grid-template-columns: repeat(7, 1fr);
-    border: 1px solid gray;
     position: absolute;
     min-width: 70vw;
     min-height: 80vh;
+    justify-items: center;
+    padding-top: 1.8rem;
 }
 
 .square {
